@@ -1,0 +1,165 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+   a:link {
+       color: black;
+       text-decoration: none;
+   }
+
+   a:visited {
+       color: black;
+       text-decoration: none;
+   }
+
+   a:active {
+       color: black;
+       text-decoration: none;
+   }
+
+
+
+@media only screen and (min-width:200px){
+    
+    Body {
+        font-family: 'Josephin-Sans', sans-serif;
+        font-weight: 200;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    
+    .sidebarMenu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -500px;
+        width: 500px;
+        background-color: rgb(250,250,250);
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin: 0 0 0 0;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+    
+    #menuButton {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    
+    #closeButton {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: white;
+    }
+    
+    .sidebarMenu ul {
+        margin-top: 100px;
+        margin-left: 0;
+        padding-left: 0;
+        font-family: 'Josephin-Sans', sans-serif;
+        list-style-type: none;
+        font-weight: 200;
+        
+    }
+    
+    img {
+        width: 74px;
+        height: 71px;
+    }
+    
+    .sidebarMenu li {
+        font-size: 50px;
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border-style: solid;
+        border-left: 0px;
+        border-top: 0px;
+        border-right: 0px;
+        width: 100%;
+        text-align: center;    
+    }
+    
+    .sidebarMenu li:hover {
+        background-color: slategray;
+    }
+    
+    .topButton {
+        border-top: 6px;
+        border-style: solid;
+    }
+    
+    .activeButton {
+        background-color: slategray;
+    }
+    
+    h1 {
+        font-size: 100px;
+        text-align: center;
+        width: 100%;
+        margin-top: 150px;
+        font-weight: 200;
+    }
+    
+    p {
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .info {
+        margin-top: 50px;
+        list-style-type: initial;
+        padding-left: 80px;
+        padding-right: 20px;
+        overflow: hidden;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .info li {
+        font-family: 'Josephin Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 200;
+        text-align: left;
+        border-style: none;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+        
+    }
+    
+    
+    h2 {
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 60px;
+        line-height: 100px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+}

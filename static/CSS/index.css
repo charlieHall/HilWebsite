@@ -1,0 +1,344 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+   a:link {
+       color: black;
+       text-decoration: none;
+   }
+
+   a:visited {
+       color: black;
+       text-decoration: none;
+   }
+
+   a:active {
+       color: black;
+       text-decoration: none;
+   }
+
+
+
+@media only screen and (min-width:200px){
+    
+    
+   body {
+       margin: 0 0 0 0;
+       padding: 0 0 0 0;
+   }
+    
+   header {
+        position:absolute;
+        left:0;
+        top:0;
+        width: 100%;
+   }   
+    
+   nav {
+       float:none;
+   }
+    
+   nav li {
+        float: right;
+        display: inline;
+        font-family: 'Josefin Sans', sans-serif;
+        padding-top: 10px;;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 50px;
+        font-size: 18px;
+   }
+    
+    nav img {
+        float: left;
+        width: 30px;
+        height: 34px;
+        padding-left: 30px;
+    }
+    
+    /* Float Shadow */
+    nav li {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+    
+    nav li:before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+        /* W3C */
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform, opacity;
+        transition-property: transform, opacity;
+    }
+    
+    nav li:hover, nav li:focus, nav li:active {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        /* move the element up by 5px */
+    }
+    
+    nav li:hover:before, nav li:focus:before, nav li:active:before {
+        opacity: 1;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+        /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+    
+    .Title {
+        margin-top: 100px;
+        background-image: url(../CSS/Images/background.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 20%;
+        transition: background-position 1s linear;
+        height: 300px;
+        cursor: all-scroll;
+    }
+    
+    .Title .filter {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(62,62,62,0.4);
+    }
+    
+    .Title h1 {
+        width: 100%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        padding-top: 10px;
+        color: white;
+    }
+    
+    /* Grow */
+    .About_Me_Button{
+        text-align: center;
+    }
+    
+    .Title{
+        text-align: center;
+    }
+    
+    .About_Me_Button a{
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        font-family: 'Josephin Sans', sans-serif;
+        margin-bottom: 10px;;
+        padding-top: 10px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        background-color: rgba(230,230,230, 0.3);
+    }
+    
+    .About_Me_Button a:hover, .About_Me_Button a:focus, .About_Me_Button a:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: rgba(230,230,230, 0.6);
+    }
+    
+    .About_Me {
+        padding-bottom: 50px;
+    }
+    
+    .About_Me h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 44px;
+        padding-left: 100px;
+        text-align: center;
+    }
+    
+    .About_Me img {
+        height: 250px;
+        width: 250px;
+        margin-left: 40px;
+        margin-right: 40px;
+        float: left;
+    }
+    
+    .About_Me p {
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Josephin Sans', sans-serif;
+        font-weight: 200;
+    }
+    
+    .below {
+        float:left;
+        width:100%;
+    }
+    
+    .Contact_Me_Button a{
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        font-family: 'Josephin Sans', sans-serif;
+        margin-bottom: 10px;;
+        padding-top: 10px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        background-color: rgba(230,230,230, 0.3);
+    }
+    
+    .Contact_Me_Button a:hover, .About_Me_Button a:focus, .About_Me_Button a:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: rgba(230,230,230, 0.6);
+    }
+    
+    .Links li {
+        display: inline-block;
+        font-size: 20px;
+        color: black;
+        border-style: solid;
+        border-width: 2px 2px 2px 2px;
+        padding: 10px 10px 5px 10px;
+        margin: 0 50px 0px 0px;
+        text-align: center;
+        direction: rtl;
+        font-family: 'Josephin Sans', sans-serif;
+        width:20%;
+        font-weight: 200;
+        border-radius: 10px;
+    }
+    
+    .Links a:hover, .Links a:focus, .Links a:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .Links {
+        text-align: center;
+    }
+    
+    .room {
+        padding-top: 50px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        white-space: none;
+    }
+    
+    .room img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        height: 60%;
+        margin-left: 20%;
+        margin-right:20%;
+    }
+    
+    
+
+}
+
+@media only screen and (max-width:800px) {
+    header {
+       display: none; 
+    }
+    
+    .Title {
+        margin-top: 0;
+    }
+    
+    .About_Me img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    header {
+       display: none; 
+    }
+    
+    .Title {
+        margin-top: 0;
+    }
+    
+    .About_Me img {
+        height: 250px;
+        width: 250px;
+        float: none;
+    }
+    
+    .Links {
+        padding-left: 10vw;
+    }
+    
+    
+    .Links li {
+        display:block;
+        font-size: 20px;
+        color: black;
+        border-style: solid;
+        border-width: 2px 2px 2px 2px;
+        padding: 12px 20px 10px 20px;
+        margin: 0 0px 20px 0px;
+        text-align: center;
+        direction: rtl;
+        font-family: 'Josephin Sans', sans-serif;
+        width: 50vw;
+        font-weight: 200;
+        border-radius: 10px;
+    }
+}

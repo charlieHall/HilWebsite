@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        
+<!--        This is the position of the CSS sheet-->
+        <link href="{{ url_for('static', filename='CSS/contact.css') }}" rel="stylesheet">
+<!--        <link href="../static/CSS/contact.css" rel="stylesheet">-->
+<!--        This is the link to the font Josefin Sans, change the url if a new font is needed-->
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      
+<!--        These links refer to the tab image that will show in the browser -->
+        <link rel="icon" href="../static/CSS/Images/tag.png">
+        <link rel="shortcut icon" href="../static/CSS/Images/tag.png">
+      
+<!--        Tags for phone use-->
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="height=device-height">
+        <meta name="viewport" content="user-scalable = yes">
+      
+<!--        This defines that name that will appear on the tab in the browser-->
+        <meta name="keywords" content="Counselling, Hilary, Marks, Brighton, Infertility, Fertility, Therapy, Hove, East Sussex, Sussex, BN3, BACP, BICA" />
+    
+<!--        This script alows j-query to run-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--        This script points to the java file for the smooth scroll functionality-->
+        <script src="../../static/js/smooth-scroll.js"></script>
+        
+        <title>Contact Me</title>
+        
+        <script src="../static/js/panoramic.js"></script>
+      
+</head>
+    
+<body>
+    <header>
+        <nav>
+            <a href="/"><img src="../static/CSS/Images/Home.png"></a>
+            <ul>
+                <li><a href="/Contact">Contact me</a></li>
+                <li><a href="/InfertilityCounselling">Infertility Counselling</a></li>
+                <li><a href="/MyPractice">My Practice</a></li>
+                <li><a href="/WhyCounselling">Why Counselling?</a></li>
+                <li><a href="/#anchor">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="Banner"></div>
+    
+    <h1>Contact Me</h1>
+    
+    <div class="contact">
+        
+  {% if success %}
+    <p>Thank you for your message. I'll get back to you as soon as possible.</p>
+ 
+  {% else %}
+        
+    <p>Please feel free to contact me with any questions you may have or to book an appointment.</p>
+    <address><p>Phone:***************<br> E-Mail: *************** <br></p></address>
+        
+    <p>The form below provides a simple way to E-mail me:</p>
+        
+  {% for message in form.name.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+ 
+  {% for message in form.email.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+ 
+ 
+  {% for message in form.message.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  <form action="{{ url_for('contact') }}" method=post>
+    {{ form.hidden_tag() }}
+ 
+    {{ form.name.label }}
+    {{ form.name }}
+ 
+    {{ form.email.label }}
+    {{ form.email }}
+ 
+    {{ form.message.label }}
+    {{ form.message }}
+ 
+    {{ form.submit }}
+  </form>
+    </div>
+    
+   {% endif %}
+    
+    <br><br>
+    
+   {% include "footer.html" %}
+    
+    
+    
+    <script>smoothScroll.init();</script>
+</body>
+</html>
