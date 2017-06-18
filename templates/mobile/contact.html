@@ -53,46 +53,6 @@
 
         <div class="contact">
 
-      {% if success %}
-        <p>Thank you for your message. I'll get back to you as soon as possible.</p>
-
-      {% else %}
-
-        <p>Please feel free to contact me with any questions you may have or to book an appointment.</p>
-        <address><p>Phone: 07789085297 <br> E-Mail: hilarymarkscounselling@gmail.com <br></p></address>
-
-        <p>The form below provides a simple way to E-mail me:</p>
-
-      {% for message in form.name.errors %}
-        <div class="flash">{{ message }}</div>
-      {% endfor %}
-
-      {% for message in form.email.errors %}
-        <div class="flash">{{ message }}</div>
-      {% endfor %}
-
-
-      {% for message in form.message.errors %}
-        <div class="flash">{{ message }}</div>
-      {% endfor %}
-
-      <form action="{{ url_for('contact') }}" method=post>
-        {{ form.hidden_tag() }}
-
-        {{ form.name.label }}
-        {{ form.name }}
-
-        {{ form.email.label }}
-        {{ form.email }}
-
-        {{ form.message.label }}
-        {{ form.message }}
-
-        {{ form.submit }}
-      </form>
-        </div>
-
-       {% endif %}
         
         <br><br>
             
